@@ -41,6 +41,41 @@ export default function Contact() {
     setFormData((prev) => ({ ...prev, [name]: value }))
   }
 
+  // const handleSubmit = async (e: React.FormEvent) => {
+  //   e.preventDefault()
+  //   if (submitting) return
+  //   setSubmitting(true)
+
+  //   try {
+  //     const response = await fetch("/api/contact-form", {
+  //       method: "POST",
+  //       headers: { "Content-Type": "application/json" },
+  //       body: JSON.stringify({
+  //         name: formData.name,
+  //         mobile: formData.phone,
+  //         email: formData.email,
+  //         concern: formData.concern,
+  //         source: "Website leads",
+  //         formName: "Website leads",
+  //         pageUrl: pageInfo.url,
+  //         pageTitle: pageInfo.title,
+  //         referrer: pageInfo.referrer,
+  //         userAgent: navigator.userAgent,
+  //         timestamp: new Date().toISOString(),
+  //       }),
+  //     })
+
+  //     const data = await response.json()
+  //     console.log("Form submission response:", data)
+      
+  //   } catch (error) {
+  //     console.error("Error submitting hair form:", error)
+  //   } finally {
+  //     router.push("/thankyou-hairtreatments")
+  //     setFormData({ name: "", phone: "", email: "", concern: "Baldness" })
+  //     setSubmitting(false)
+  //   }
+  // }
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
     if (submitting) return
@@ -68,12 +103,22 @@ export default function Contact() {
       const data = await response.json()
       console.log("Form submission response:", data)
       
+      // Add delay before redirect on success
+      setTimeout(() => {
+        router.push("/thankyou-hairtreatments")
+        setFormData({ name: "", phone: "", email: "", concern: "Baldness" })
+        setSubmitting(false)
+      }, 500) // 2 second delay
+      
     } catch (error) {
       console.error("Error submitting hair form:", error)
-    } finally {
-      router.push("/thankyou-hairtreatments")
-      setFormData({ name: "", phone: "", email: "", concern: "Baldness" })
-      setSubmitting(false)
+      
+      // Add delay before redirect on error
+      setTimeout(() => {
+        router.push("/thankyou-hairtreatments")
+        setFormData({ name: "", phone: "", email: "", concern: "Baldness" })
+        setSubmitting(false)
+      }, 500) // 2 second delay
     }
   }
 

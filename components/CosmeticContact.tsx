@@ -41,6 +41,41 @@ export default function CosmeticContact() {
     setFormData((prev) => ({ ...prev, [name]: value }))
   }
 
+  // const handleSubmit = async (e: React.FormEvent) => {
+  //   e.preventDefault()
+  //   if (submitting) return
+  //   setSubmitting(true)
+
+  //   try {
+  //     const response = await fetch("/api/contact-form", {
+  //       method: "POST",
+  //       headers: { "Content-Type": "application/json" },
+  //       body: JSON.stringify({
+  //         name: formData.name,
+  //         mobile: formData.phone,
+  //         email: formData.email,
+  //         concern: formData.concern,
+  //         source: "Website leads",
+  //         formName: "Website leads",
+  //         pageUrl: pageInfo.url,
+  //         pageTitle: pageInfo.title,
+  //         referrer: pageInfo.referrer,
+  //         userAgent: navigator.userAgent,
+  //         timestamp: new Date().toISOString(),
+  //       }),
+  //     })
+
+  //     const data = await response.json()
+  //     console.log("Form submission response:", data)
+      
+  //   } catch (error) {
+  //     console.error("Error submitting cosmetic form:", error)
+  //   } finally {
+  //     router.push("/thankyou-CosmeticSurgery")
+  //     setFormData({ name: "", phone: "", email: "", concern: "Liposuction" })
+  //     setSubmitting(false)
+  //   }
+  // }
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
     if (submitting) return
@@ -68,12 +103,21 @@ export default function CosmeticContact() {
       const data = await response.json()
       console.log("Form submission response:", data)
       
+      // Add delay before redirect
+      setTimeout(() => {
+        router.push("/thankyou-CosmeticSurgery")
+        setFormData({ name: "", phone: "", email: "", concern: "Liposuction" })
+        setSubmitting(false)
+      }, 500) // 2 second delay
+      
     } catch (error) {
       console.error("Error submitting cosmetic form:", error)
-    } finally {
-      router.push("/thankyou-CosmeticSurgery")
-      setFormData({ name: "", phone: "", email: "", concern: "Liposuction" })
-      setSubmitting(false)
+      // Even on error, redirect after delay
+      setTimeout(() => {
+        router.push("/thankyou-CosmeticSurgery")
+        setFormData({ name: "", phone: "", email: "", concern: "Liposuction" })
+        setSubmitting(false)
+      }, 500)
     }
   }
 
