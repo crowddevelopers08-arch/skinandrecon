@@ -15,7 +15,7 @@ const HairFooter = () => {
               {/* Logo Section */}
               <div className="mb-4 sm:mb-5 flex justify-center sm:justify-start">
                 <img 
-                  src="/https://ik.imagekit.io/nlpkmjblv/public/public/d99d1d2c-9b97-47be-8e3c-0244feee1290.jpg"
+                  src="/https://ik.imagekit.io/nlpkmjblv/public/public/skinandreconlogo.png"
                   alt="Skin & Recon Logo"
                   className="h-16 sm:h-20 w-auto"
                   onError={(e) => {
