@@ -22,7 +22,6 @@ export default function PrivacyPolicyPage() {
       {/* Main Content */}
       <main className="container mx-auto px-4 py-16 max-[470px]:py-8">
         <div className="max-w-4xl mx-auto">
-          {/* Header Section */}
           <div className="text-center mb-12">
             <div className="flex justify-center mb-6">
               <Shield className="w-16 h-16 text-[#7b5f43]" />
