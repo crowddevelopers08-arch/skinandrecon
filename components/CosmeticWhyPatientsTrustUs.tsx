@@ -101,7 +101,7 @@ const CosmeticWhyPatientsTrustUs = () => {
             <div className="relative">
               <div className="w-80 h-80 rounded-full overflow-hidden border-4 border-white shadow-lg">
                 <img 
-                  src="coswhy.png" 
+                  src="https://ik.imagekit.io/nlpkmjblv/public/public/coswhy.png" 
                   alt="Patient consultation with cosmetic surgery specialists" 
                   className="w-full h-full object-cover"
                 />

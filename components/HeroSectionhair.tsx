@@ -46,9 +46,9 @@ const HeroSectionhair = () => {
                                 preload="metadata"
                                 poster="/video-poster1.jpg"
                             >
-                                <source src="/hero2.mp4" type="video/mp4" />
-                                <source src="/hero2.mp4" type="video/quicktime" />
-                                <source src="/hero2.mp4" type="video/webm" />
+                                <source src="https://ik.imagekit.io/nlpkmjblv/public/public/hero2.mp4?tr=orig" type="video/mp4" />
+                                <source src="https://ik.imagekit.io/nlpkmjblv/public/public/hero2.mp4?tr=orig" type="video/quicktime" />
+                                <source src="https://ik.imagekit.io/nlpkmjblv/public/public/hero2.mp4?tr=orig" type="video/webm" />
                                 Your browser does not support the video tag.
                             </video>
                         </div>
@@ -77,9 +77,9 @@ const HeroSectionhair = () => {
                             preload="metadata"
                             poster="/video-poster1.jpg"
                         >
-                            <source src="/hero2.mp4" type="video/mp4" />
-                            <source src="/hero2.mp4" type="video/quicktime" />
-                            <source src="/hero2.mp4" type="video/webm" />
+                            <source src="https://ik.imagekit.io/nlpkmjblv/public/public/hero2.mp4?tr=orig" type="video/mp4" />
+                            <source src="https://ik.imagekit.io/nlpkmjblv/public/public/hero2.mp4?tr=orig" type="video/quicktime" />
+                            <source src="https://ik.imagekit.io/nlpkmjblv/public/public/hero2.mp4?tr=orig" type="video/webm" />
                             Your browser does not support the video tag.
                         </video>
                     </div>

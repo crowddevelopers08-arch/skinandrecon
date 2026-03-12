@@ -45,7 +45,7 @@ const HairWhyPatientsTrustUs = () => {
             <div className="relative">
               <div className="w-80 h-80 rounded-full overflow-hidden border-4 border-white shadow-lg">
                 <img 
-                  src="skinand1.jpg" 
+                  src="https://ik.imagekit.io/nlpkmjblv/public/public/skinand1.jpg" 
                   alt="Patient consultation" 
                   className="w-full h-full object-cover"
                 />
