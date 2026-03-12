@@ -19,7 +19,7 @@ const HairBeforeAfterGallery: React.FC = () => {
   const galleryImages: GalleryImage[] = [
         {
       id: 3,
-      beforeImage: "https://ik.imagekit.io/nlpkmjblv/public/public/skinandreconlogo.png",
+      beforeImage: "https://ik.imagekit.io/nlpkmjblv/public/public/d99d1d2c-9b97-47be-8e3c-0244feee1290.jpg",
       afterImage: "",
       alt: "Mid-scalp Restoration"
     },
