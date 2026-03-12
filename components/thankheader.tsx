@@ -9,7 +9,7 @@ const Thankheader = () => {
                     <div className="shrink-0">
                         <a href="#" className="flex">
                             <img
-                                src="skinandreconlogo.png"
+                                src="https://ik.imagekit.io/nlpkmjblv/public/public/d99d1d2c-9b97-47be-8e3c-0244feee1290.jpg"
                                 alt="Brand Logo"
                                 className="h-10 w-auto sm:h-12 md:h-14 lg:h-16 xl:h-18 object-contain"
                             />
