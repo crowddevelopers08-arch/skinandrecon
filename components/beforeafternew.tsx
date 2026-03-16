@@ -19,13 +19,13 @@ const HairBeforeAfterGallery: React.FC = () => {
   const galleryImages: GalleryImage[] = [
         {
       id: 3,
-      beforeImage: "https://ik.imagekit.io/nlpkmjblv/public/public/d99d1d2c-9b97-47be-8e3c-0244feee1290.jpg",
+      beforeImage: "/d99d1d2c-9b97-47be-8e3c-0244feee1290.jpg",
       afterImage: "",
       alt: "Mid-scalp Restoration"
     },
     {
       id: 1,
-      beforeImage: "https://ik.imagekit.io/nlpkmjblv/public/public/1on.png",
+      beforeImage: "/1on.png",
       afterImage: "",
       alt: "Crown Restoration"
     },
@@ -33,13 +33,13 @@ const HairBeforeAfterGallery: React.FC = () => {
    
     {
       id: 5,
-      beforeImage: "https://ik.imagekit.io/nlpkmjblv/public/public/4.png",
+      beforeImage: "/4.png",
       afterImage: "",
       alt: "Hair Growth Results"
     },
      {
       id: 4,
-      beforeImage: "https://ik.imagekit.io/nlpkmjblv/public/public/fourth.jpg",
+      beforeImage: "/fourth.jpg",
       afterImage: "",
       alt: "Beard Restoration"
     },

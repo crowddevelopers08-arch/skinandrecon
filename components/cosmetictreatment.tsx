@@ -10,28 +10,28 @@ export default function CosmeticTreatments() {
     {
       id: 1,
       title: "Liposuction",
-      image: "https://ik.imagekit.io/nlpkmjblv/public/public/liposuction.jpg",
+      image: "/liposuction.jpg",
       description: "Sculpt and contour stubborn fat areas such as abdomen, flanks, thighs, arms and chin. Achieve a more defined and proportionate shape with minimal downtime.",
       serviceValue: "liposuction"
     },
     {
       id: 2,
       title: "Rhinoplasty",
-      image: "https://ik.imagekit.io/nlpkmjblv/public/public/rihno.jpg",
+      image: "/rihno.jpg",
       description: "Refine or reshape your nose to improve symmetry, balance and breathing. Get natural-looking results that enhance your overall facial harmony.",
       serviceValue: "rhinoplasty"
     },
     {
       id: 3,
       title: "Gynecomastia Surgery",
-      image: "https://ik.imagekit.io/nlpkmjblv/public/public/gynecomastia.jpg",
+      image: "/gynecomastia.jpg",
       description: "Correct enlarged male breast tissue for a flatter, firmer, more masculine chest. A safe and effective solution with long-lasting results.",
       serviceValue: "gynecomastia"
     },
     {
       id: 4,
       title: "Blepharoplasty",
-      image: "https://ik.imagekit.io/nlpkmjblv/public/public/depositphotos.jpg",
+      image: "/depositphotos.jpg",
       description: "Lift drooping eyelids or remove under-eye bags for a fresher, youthful, well-rested appearance—without changing your natural expression.",
       serviceValue: "blepharoplasty"
     }

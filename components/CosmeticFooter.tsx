@@ -14,7 +14,7 @@ const CosmeticFooter = () => {
             {/* Logo Section */}
             <div className="mb-4 sm:mb-5 flex justify-start">
               <img 
-                src="/https://ik.imagekit.io/nlpkmjblv/public/public/skinandreconlogo.png"
+                src="/skinandreconlogo.png"
                 alt="Skin & Recon Logo"
                 className="h-16 sm:h-20 w-auto"
                 onError={(e) => {

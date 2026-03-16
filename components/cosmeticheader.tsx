@@ -8,7 +8,7 @@ const CosmeticNavbar = () => {
                     <div className="shrink-0">
                         <a href="#" className="flex">
                             <img
-                                src="https://ik.imagekit.io/nlpkmjblv/public/public/skinandreconlogo.png"
+                                src="/skinandreconlogo.png"
                                 alt="Brand Logo"
                                 className="h-10 w-auto sm:h-12 md:h-14 lg:h-16 xl:h-18 object-contain"
                             />

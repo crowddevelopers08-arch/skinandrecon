@@ -50,9 +50,9 @@ const HeroSectioncosmetic = () => {
                                 preload="metadata"
                                 poster="/video-poster2.jpg"
                             >
-                                <source src="https://ik.imagekit.io/nlpkmjblv/public/public/skinandreconethree.mp4" type="video/mp4" />
-                                <source src="https://ik.imagekit.io/nlpkmjblv/public/public/skinandreconethree.mp4" type="video/quicktime" />
-                                <source src="https://ik.imagekit.io/nlpkmjblv/public/public/skinandreconethree.mp4" type="video/webm" />
+                                <source src="https://ik.imagekit.io/sa0fw9cfy/skinandreconethree.mp4" type="video/mp4" />
+                                <source src="https://ik.imagekit.io/sa0fw9cfy/skinandreconethree.mp4" type="video/quicktime" />
+                                <source src="https://ik.imagekit.io/sa0fw9cfy/skinandreconethree.mp4" type="video/webm" />
                                 Your browser does not support the video tag.
                             </video>
                         </div>
@@ -117,9 +117,9 @@ const HeroSectioncosmetic = () => {
                             preload="metadata"
                             poster="/video-poster2.jpg"
                         >
-                            <source src="https://ik.imagekit.io/nlpkmjblv/public/public/skinandreconethree.mp4" type="video/mp4" />
-                            <source src="https://ik.imagekit.io/nlpkmjblv/public/public/skinandreconethree.mp4" type="video/quicktime" />
-                            <source src="https://ik.imagekit.io/nlpkmjblv/public/public/skinandreconethree.mp4" type="video/webm" />
+                            <source src="https://ik.imagekit.io/sa0fw9cfy/skinandreconethree.mp4" type="video/mp4" />
+                            <source src="https://ik.imagekit.io/sa0fw9cfy/skinandreconethree.mp4" type="video/quicktime" />
+                            <source src="https://ik.imagekit.io/sa0fw9cfy/skinandreconethree.mp4" type="video/webm" />
                             Your browser does not support the video tag.
                         </video>
                     </div>

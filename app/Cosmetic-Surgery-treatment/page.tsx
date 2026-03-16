@@ -12,6 +12,8 @@ import CosmeticContact from "@/components/CosmeticContact";
 import CosmeticTreatments from "@/components/cosmetictreatment";
 import Head from 'next/head';
 import Script from 'next/script';
+import CosmeticVideoSection from "@/components/cosmeticVideoSection";
+import CosBeforeAfterSection from "@/components/newcosmeticvideo";
 
 export default function HomePage() {
   return (
@@ -30,6 +32,8 @@ export default function HomePage() {
         <section id="cosdoctor">
           <Cosmeticdoctor />
         </section>
+        {/* <CosmeticVideoSection /> */}
+        <CosBeforeAfterSection />
         <CosmeticWhyPatientsTrustUs />
         <CosmeticTestimonials />
 

@@ -38,7 +38,7 @@ const Hairdoctor = () => {
               <div className="block lg:hidden flex justify-center mb-8">
                 <div className="relative w-full max-w-[400px] h-[360px] sm:h-[420px] rounded-lg overflow-hidden shadow-lg border-2 border-[#7b5f43]">
                   <img 
-                    src="https://ik.imagekit.io/nlpkmjblv/public/public/both-doctors.jpg" 
+                    src="/both-doctors.jpg" 
                     alt="Dr. Shruthi Chikkaiah and Dr. Rakesh Koudki - Hair Transplant Specialists"
                     className="w-full h-full object-cover"
                   />
@@ -130,7 +130,7 @@ const Hairdoctor = () => {
           <div className="hidden lg:flex w-full lg:w-2/5 justify-center items-center">
             <div className="relative w-full h-[380px] lg:h-[450px] xl:h-[500px] rounded-lg overflow-hidden shadow-xl border-4 border-white">
               <img 
-                src="https://ik.imagekit.io/nlpkmjblv/public/public/both-doctors.jpg" 
+                src="/both-doctors.jpg" 
                 alt="Dr. Shruthi Chikkaiah and Dr. Rakesh Koudki - Hair Transplant Specialists"
                 className="w-full h-full object-cover"
               />
