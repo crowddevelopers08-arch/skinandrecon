@@ -37,6 +37,17 @@ const CARDS = [
     tagBorder: "rgba(242,160,181,0.35)",
     video: "/Rhinoplasty3.mov",
   },
+  {
+    id: 4,
+    tag: "Before & After",
+    name: "Before & After",
+    desc: "See the remarkable transformations achieved at our clinic with precision and care.",
+    stat: "Zero downtime treatment",
+    tagColor: "#f2a0b5",
+    tagBg: "rgba(242,160,181,0.12)",
+    tagBorder: "rgba(242,160,181,0.35)",
+    video: "/ads.mp4",
+  },
 ];
 
 export default function CosBeforeAfterSection() {
@@ -160,17 +171,20 @@ export default function CosBeforeAfterSection() {
         <div className="max-w-6xl mx-auto px-6">
 
           {/* Title */}
-          <motion.h2
+          {/* <motion.h2
             className="text-4xl max-[470px]:text-[30px] max-[325px]:text-[25px] font-bold text-center mb-4 text-[#180109]"
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8, type: "spring", stiffness: 80, damping: 15 }}
           >
-            See the Results in Action
-          </motion.h2>
+             
+          </motion.h2> */}
+            <h2 className="text-4xl md:text-5xl text-center font-bold text-[#101828] mb-4">
+         Results & <span className="text-[#7b5f43]">Patient Queries</span>
+          </h2>
           <p className="text-sm sm:text-base lg:text-lg text-[#180109] text-center mb-8 sm:mb-10 max-w-2xl mx-auto">
-            Watch real hair restoration transformations from our clinic
+            Watch our specialist explain how the treatment works and who it is best suited for.
           </p>
 
           {/* Carousel */}
