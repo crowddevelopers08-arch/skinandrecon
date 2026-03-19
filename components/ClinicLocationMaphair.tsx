@@ -108,7 +108,7 @@ export default function Contact() {
         router.push("/thankyou-hairtreatments")
         setFormData({ name: "", phone: "", email: "", concern: "Baldness" })
         setSubmitting(false)
-      }, 500) // 2 second delay
+      }, 1000) // 2 second delay
       
     } catch (error) {
       console.error("Error submitting hair form:", error)
