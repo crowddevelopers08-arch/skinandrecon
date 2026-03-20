@@ -14,30 +14,42 @@ export const metadata: Metadata = {
 export default function ThankYouPage() {
   return (
     <div className="min-h-screen bg-black text-white">
-      {/* Google Ads Conversion Tracking */}
-      <Script id="google-ads-conversion-cosmetic-surgery" strategy="afterInteractive">
-        {`
-          gtag('event', 'conversion', {'send_to': 'AW-11327193954/WGxYCNmB96kbEOKGnZkq'});
-        `}
-      </Script>
+      {/* Google Ads Conversion Tracking - Using afterInteractive to ensure they run */}
+      <Script 
+        id="google-ads-conversion-cosmetic-surgery" 
+        strategy="afterInteractive"
+        dangerouslySetInnerHTML={{
+          __html: `
+            gtag('event', 'conversion', {'send_to': 'AW-11327193954/WGxYCNmB96kbEOKGnZkq'});
+          `
+        }}
+      />
       
       {/* Submit lead form conversion tracking */}
-      <Script id="google-ads-conversion-submit-lead" strategy="afterInteractive">
-        {`
-          gtag('event', 'conversion', {'send_to': 'AW-11327193954/TzWMCLuE88IbEOKGnZkq'});
-        `}
-      </Script>
+      <Script 
+        id="google-ads-conversion-submit-lead" 
+        strategy="afterInteractive"
+        dangerouslySetInnerHTML={{
+          __html: `
+            gtag('event', 'conversion', {'send_to': 'AW-11327193954/TzWMCLuE88IbEOKGnZkq'});
+          `
+        }}
+      />
       
       {/* Submit lead form Hair conversion page */}
-      <Script id="google-ads-conversion-hair-lead" strategy="afterInteractive">
-        {`
-          gtag('event', 'conversion', {
-            'send_to': 'AW-17776361413/3k7pCLqul-IbEMX_tpxC',
-            'value': 1.0,
-            'currency': 'INR'
-          });
-        `}
-      </Script>
+      <Script 
+        id="google-ads-conversion-hair-lead" 
+        strategy="afterInteractive"
+        dangerouslySetInnerHTML={{
+          __html: `
+            gtag('event', 'conversion', {
+              'send_to': 'AW-17776361413/3k7pCLqul-IbEMX_tpxC',
+              'value': 1.0,
+              'currency': 'INR'
+            });
+          `
+        }}
+      />
       
       <Thankheader />
 

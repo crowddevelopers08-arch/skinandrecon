@@ -41,41 +41,6 @@ export default function CosmeticContact() {
     setFormData((prev) => ({ ...prev, [name]: value }))
   }
 
-  // const handleSubmit = async (e: React.FormEvent) => {
-  //   e.preventDefault()
-  //   if (submitting) return
-  //   setSubmitting(true)
-
-  //   try {
-  //     const response = await fetch("/api/contact-form", {
-  //       method: "POST",
-  //       headers: { "Content-Type": "application/json" },
-  //       body: JSON.stringify({
-  //         name: formData.name,
-  //         mobile: formData.phone,
-  //         email: formData.email,
-  //         concern: formData.concern,
-  //         source: "Website leads",
-  //         formName: "Website leads",
-  //         pageUrl: pageInfo.url,
-  //         pageTitle: pageInfo.title,
-  //         referrer: pageInfo.referrer,
-  //         userAgent: navigator.userAgent,
-  //         timestamp: new Date().toISOString(),
-  //       }),
-  //     })
-
-  //     const data = await response.json()
-  //     console.log("Form submission response:", data)
-      
-  //   } catch (error) {
-  //     console.error("Error submitting cosmetic form:", error)
-  //   } finally {
-  //     router.push("/thankyou-CosmeticSurgery")
-  //     setFormData({ name: "", phone: "", email: "", concern: "Liposuction" })
-  //     setSubmitting(false)
-  //   }
-  // }
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
     if (submitting) return
@@ -100,21 +65,26 @@ export default function CosmeticContact() {
         }),
       })
 
+      if (!response.ok) {
+        throw new Error(`HTTP error! status: ${response.status}`)
+      }
+
       const data = await response.json()
       console.log("Form submission response:", data)
       
-      // Add delay before redirect
+      // Use window.location.href for hard refresh to ensure all scripts load on thank you page
       setTimeout(() => {
-        router.push("/thankyou-CosmeticSurgery")
+        window.location.href = "/thankyou-CosmeticSurgery"
+        // Reset form data
         setFormData({ name: "", phone: "", email: "", concern: "Liposuction" })
         setSubmitting(false)
-      }, 500) // 2 second delay
+      }, 500)
       
     } catch (error) {
       console.error("Error submitting cosmetic form:", error)
-      // Even on error, redirect after delay
+      // Even on error, redirect after delay with hard refresh
       setTimeout(() => {
-        router.push("/thankyou-CosmeticSurgery")
+        window.location.href = "/thankyou-CosmeticSurgery"
         setFormData({ name: "", phone: "", email: "", concern: "Liposuction" })
         setSubmitting(false)
       }, 500)
@@ -134,7 +104,7 @@ export default function CosmeticContact() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 lg:gap-16">
             {/* Contact Form */}
-            <section id="hairform">
+            <section id="cosmeticform">
               <div className="order-2 lg:order-1">
                 <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground mb-6 md:mb-8 text-balance">
                   Get Your Free Consultation Today
