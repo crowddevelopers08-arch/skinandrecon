@@ -13,7 +13,7 @@ const CARDS = [
     tagColor: "#6d5b8f",
     tagBg: "rgba(109,91,143,0.12)",
     tagBorder: "rgba(109,91,143,0.3)",
-    video: "https://ik.imagekit.io/0hyyhp9nj/Rhinoplasty1.mov",
+    video: "/Rhinoplasty1.mov",
   },
   {
     id: 2,
@@ -24,7 +24,7 @@ const CARDS = [
     tagColor: "#ec778d",
     tagBg: "rgba(236,119,141,0.12)",
     tagBorder: "rgba(236,119,141,0.35)",
-    video: "https://ik.imagekit.io/0hyyhp9nj/Rhinoplasty2.mov",
+    video: "/Rhinoplasty2.mov",
   },
   {
     id: 3,
