@@ -37,7 +37,7 @@ export default function PrivacyPolicyPage() {
           <div className="bg-gradient-to-r from-[#7b5f43]/10 to-transparent rounded-2xl p-8 mb-12">
             <h2 className="text-2xl font-bold text-[#7b5f43] mb-4 flex items-center gap-3">
               <Eye className="w-6 h-6" />
-              Quick Overview
+              Quick Overviews
             </h2>
             <p className="text-gray-300 leading-relaxed">
               At Skin & Recon Hair Transplant Clinic, we are committed to protecting your personal information and medical

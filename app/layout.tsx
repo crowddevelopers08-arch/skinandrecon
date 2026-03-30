@@ -44,14 +44,14 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${geist.variable} ${manrope.variable} antialiased`}>
       <head>
-        {/* Google Analytics Script */}
-        {/* <Script
+        {/* Google tag (gtag.js) */}
+        <Script
           async
           src="https://www.googletagmanager.com/gtag/js?id=AW-17776361413"
           strategy="afterInteractive"
         />
         <Script
-          id="google-analytics"
+          id="google-gtag"
           strategy="afterInteractive"
           dangerouslySetInnerHTML={{
             __html: `
@@ -62,21 +62,6 @@ export default function RootLayout({
             `,
           }}
         />
-         */}
-        {/* Microsoft Clarity Script */}
-        {/* <Script
-          id="microsoft-clarity"
-          strategy="afterInteractive"
-          dangerouslySetInnerHTML={{
-            __html: `
-              (function(c,l,a,r,i,t,y){
-                  c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-                  t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-                  y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-              })(window, document, "clarity", "script", "v0p4b740zz");
-            `,
-          }}
-        /> */}
         
         {/* Google Tag Manager */}
         <Script
